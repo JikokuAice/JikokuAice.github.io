@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Libre+Franklin:ital,wght@1,600&family=Raleway:wght@100&family=Roboto+Mono:ital,wght@0,200;1,300&family=Roboto:wght@300&display=swap');
+
+
+
+
+
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding: 10px;
+}
+h1{
+font-family: Libre Franklin;
+}
+
+
+.main{
+height: 200px; 
+width: 760px; 
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 10px;
+text-align: center;
+box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.234);
+margin-top: 7%;
+font-family: Roboto mono;
+font-weight: 800;
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 2rem ;
+
+}
+
+
+.main div:not(:nth-child(5)){
+grid-row-start: 2;
+
+}
+
+
+.read{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    
+}
+
+.main input[type='text']{
+    padding: 5px 10px;
+    margin-top: 8px;
+    outline: none;
+   
+}
+
+.main select{
+    padding: 5px 8px;
+    margin-top: 8px;
+    outline: none;
+}
+
+.main input[type='text']:hover{
+    outline: 2.5px solid rgba(101, 196, 255, 0.626);
+}
+
+.main select:hover{
+    outline: 2.5px solid rgba(101, 196, 255, 0.826); 
+}
+
+.add-button{
+   grid-row: 3/3;
+   grid-column: 1/2;
+  
+}
+.add-button button{
+    padding: 5px 15px;
+    
+}
+.add-button button:hover{
+    outline: 2.5px solid rgba(101, 196, 255, 0.826);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.display{
+  width: 90%;
+  max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+}
+.table{
+    width: 80%;
+}
+
+.Realtable{
+  
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+    margin:2rem ;
+    
+
+}
+
+.Realtable th,.Realtable td{
+    padding: 8px 10px;
+    
+}
+
+.Realtable th{
+   text-align: left;
+   padding: 12px 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.319);
+  
+}
+
+.Realtable tr:nth-child(even){
+    background-color:rgba(211, 211, 211, 0.226);
+    
+}
+
+td .delete{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+     color: rgb(149, 149, 149);
+    cursor: pointer;
+     transition: all 0.2s ease;
+}
+
+td .delete:hover{
+color: rgba(0, 0, 0, 0.688);
+background-color: rgba(255, 0, 0, 0.71);
+transform: translate(5px,0px);
+
+}
+
+.button-status{
+    padding: 0.3rem 0.7rem;
+background-color: white;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    padding: 0px 5px;
+    border: 0.5px solid;
+    border-radius: 3px;
+}
+
+.button-status:hover{
+    outline: 2.5px solid rgba(101, 196, 255, 0.826);
+}
+
+
+button.black{
+background-color: black;
+color: white;
+transition: 0.2s ease-in;
+}
+
+
+
+@media screen and (max-width:760px){
+.main{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  justify-content: space-evenly;
+}
+    
+}
+
+
+@media screen and (max-width:525px){
+    .main{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .display{
+        max-width: 300px;
+        align-items:start;
+    } 
+    body{
+        align-items: flex-start;
+    }
+    .Realtable{
+        margin: 0;   
+    }
+    .button-status{
+        height: 30px;
+        width: 70px;
+        overflow: hidden;
+    }
+    }
+    
+
+
+
+#valid{
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+.valid2{
+    font-size: 10px;
+    color: red;
+    display: none;  
+}
