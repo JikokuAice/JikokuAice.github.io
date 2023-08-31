@@ -77,6 +77,7 @@ grid-row-start: 2;
 .add-button{
    grid-row: 3/3;
    grid-column: 1/2;
+   margin-bottom: 10px;
   
 }
 .add-button button{
