@@ -1,26 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STOP-WATCH</title>
-    <link rel="stylesheet" href="./oing.css">
+    <title>Book management app</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Raleway:wght@100&family=Roboto+Mono:ital,wght@0,200;1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<h1 id="HEAD">Stop-Watch</h1>
-<div class="toggle">
-    <input type="checkbox" id="cir">
-    <label for="cir" class="togle"></label>
+    <h1>Libary app</h1>
+    <i class="fa fa-book" aria-hidden="true" style="font-size: 1.6rem;"></i>
+    <div class="main">
+
+<div class="name">
+<p>book name</p>
+<input type="text" placeholder="enter books name" class="book-name" required >
+<p id='valid'></p>
 </div>
-<div class="main">
-<h2 id="screen">00:00:00:00</h2>
-<div class="div" class="buttons">
-<button id="start" >START</button>
-<button id="reset"; >RESET</button>
-<button id="end" onclick="ends()">END</button>
+
+<div class="author">
+<p>author</p>
+<input type="text" placeholder="book author nname" class="book-author" required>
+<p id='valid' ></p>
 </div>
+
+<div class="PAGE">
+<p>pages</p>
+<input type="text" placeholder="total pages" class="book-page" required>
+<p id='valid' class='validSec'></p> 
 </div>
+
+<div class="read">
+<label for="droping">read</label>
+<select name="sdsd" id="droping" class="dropit">
+<option value="a1">completed</option>
+<option value="a2">uncompleted</option>
+</select>
+</div>
+
+<div class="add-button">
+<button id="main-button">ADD BOOK</button>
+</div>
+
+
+</div>
+<div class="display">
+<h2>Your Book</h2>
+<div class="table">
+    
+<table class="Realtable">
+<tr>
+<th>Book</th>
+<th>Author</th>
+<th>Pages</th>
+<th>status</th>
+<th>Delete</th>
+</tr>
+
+
+
+<tbody class="table-body">
+</tbody>
+
+    </table>
+</div>
+ </div>
 </body>
-<script src='./functions.js'></script>
+<script defer src="./scripting.js"></script>
 </html>
