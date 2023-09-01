@@ -1,7 +1,10 @@
-# JikokuAice.github.
+
 # Library App Project
 
 This project is a personal endeavor inspired by the Odin Curriculum's project. The goal is to create a user-friendly Library App that enables users to manage their personal book collections effectively. The app integrates cutting-edge features such as local storage, responsive design, and form validation to provide a modern and streamlined approach to organizing books.
+
+## website live at
+[library-app by ayush](https://jikokuaice.github.io/)
 
 ## Features
 
@@ -37,9 +40,6 @@ To explore and utilize the Library App:
 
 This project is a personal undertaking, and contributions are not being actively sought at this time. However, feel free to fork the repository and customize the app to suit your needs or experiment with new features.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE), granting you the freedom to use, modify, and distribute the code as per the terms of the license.
 
 ---
 
