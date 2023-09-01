@@ -135,7 +135,7 @@ function valiation2(){
     if(isNaN(bookpage)){
 valid2.forEach((e)=>{
 e.style.display='block'
-e.innerText='letter only';
+e.innerText='!number only';
 conditions2=false;
 });
 
