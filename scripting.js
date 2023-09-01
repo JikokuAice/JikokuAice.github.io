@@ -69,8 +69,8 @@ cel4.addEventListener('click', function(){
     }
     else{
        btnintable.innerText='Done'
-       btnintable.style.backgroundColor='white';
-       btnintable.style.color='black';
+       btnintable.backgroundColor='white';
+       btnintable.color='black';
     }
     });
     if(dropit.options[dropit.selectedIndex].value=='a2'){
